@@ -159,8 +159,8 @@
         <form name="kenangan-senja" method="post" action="https://script.google.com/macros/s/AKfycbyDWyCC4U_PZcAvaf6BP11EcV-YtRnatY96ps3-NNn5GdAlRIBWsP8O1G02T3BVa4Kvww/exec">
 
             <div class="alert my-alert">
-                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                <span>Terima kasih!</span> Pesan Anda telah kami terima.
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <span id="alert">Berikan Saran!</span> Agar lebih baik lagi ke depannya.
               </div>
 
             <div class="input-group">
@@ -177,8 +177,14 @@
                  <i data-feather="phone"></i>
                  <input type="text" placeholder="phone" name="phone" required>
             </div>
+            
+            <div class="input-group">
+                 
+                 <input type="text" placeholder="pesan" rows="3" name="pesan" required>
+                 
+            </div>
 
-            <button type="submit" onclick="submit" class="btn-kirim">Kirim Pesan</button>
+            <button type="submit" class="btn-kirim">Kirim Pesan</button>
             
             <button class="btn-loading">
                 <i class="fa fa-circle-o-notch fa-spin"></i> Loading
@@ -244,6 +250,7 @@
           e.preventDefault()
           // ketika tombol submit di klik
           // tambilkan tombol loading, hilangkan tombol kirim
+        
          
           fetch(scriptURL, '/index.html' { method: 'POST', body: new FormData(form)})
             .then(response => console.log('Success!', response))

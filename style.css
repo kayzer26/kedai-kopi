@@ -360,13 +360,19 @@ footer .credit a {
 }
 
 .contact .row .alert {
-    
-    padding: 20px;
-    display: none;
-    background-color: rgb(33, 34, 37);
-    color: white;
-    margin-bottom: 15px;
+
+    padding: 1.5rem;
+    display: inline-block;
+    background-color: var(--primary);
+    color: whitesmoke;
+    margin-bottom: 1rem;
     cursor: pointer;
+    text-align: center;
+}
+
+#alert {
+
+    color: black;
 
 }
 
