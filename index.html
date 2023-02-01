@@ -20,6 +20,9 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- button loading -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -57,7 +60,7 @@
         <main class="content">
 
             <h1>Mari Nikmati Secangkir <span>Kopi</span></h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, harum!</p>
+            <p>Dari <span>ngopi</span> akan menjadi <span>sahabat</span></p>
             <a href="#"  class="cta">Beli Sekarang</a>
 
         </main>
@@ -82,8 +85,8 @@
         <div class="content">
 
             <h3>Kenapa memilih kopi kami?</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, porro!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis explicabo dicta enim esse sapiente ipsam iusto repellat natus maxime minus.</p>
+            <p>Sering dengar istilah “ngopi yuk!” bukan? Meskipun ujung-ujungnya manusia tidak memesan kopi hitam, tapi istilah ngopi yuk terasa begitu familiar. Tak ada sekelompok sahabat manapun di dunia ini yang tak pernah menghabiskan waktu kebersamaannya di kedai kopi. Kopi dinilai sebagai alat “pelebur batas’ yang mampu mencairkan kekakuan dan mempererat jalinan pertemanan.</p>
+            <p>Tak ada waktu yang terlambat untuk menikmati kopi. Seperti jatuh cinta, mencintai kopi untuk beberapa orang terkadang juga butuh waktu. Salam kopi!</p>
 
         </div>
 
@@ -97,7 +100,7 @@
     <section id="menu" class="menu">
 
         <h2><span>Menu</span> Kami</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint tempore dolore pariatur. Porro, est maiores.</p>
+        <p>Terdapat beberapa varian rasa untuk menemani waktu melamun kalian</p>
 
         <div class="row">
             <div class="menu-card">
@@ -108,31 +111,31 @@
 
             <div class="menu-card">
                 <img src="img/1.jpg" alt="Espresso" class="espresso">
-                <h3 class="menu-card-title">Espresso</h3>
+                <h3 class="menu-card-title">Americano</h3>
                 <p class="menu-card-price">IDR 15K</p>
             </div>
 
             <div class="menu-card">
                 <img src="img/1.jpg" alt="Espresso" class="espresso">
-                <h3 class="menu-card-title">Espresso</h3>
+                <h3 class="menu-card-title">Kapal Api</h3>
                 <p class="menu-card-price">IDR 15K</p>
             </div>
 
             <div class="menu-card">
                 <img src="img/1.jpg" alt="Espresso" class="espresso">
-                <h3 class="menu-card-title">Espresso</h3>
+                <h3 class="menu-card-title">ABC Susu</h3>
                 <p class="menu-card-price">IDR 15K</p>
             </div>
 
             <div class="menu-card">
                 <img src="img/1.jpg" alt="Espresso" class="espresso">
-                <h3 class="menu-card-title">Espresso</h3>
+                <h3 class="menu-card-title">Luwak White Coffee</h3>
                 <p class="menu-card-price">IDR 15K</p>
             </div>
 
             <div class="menu-card">
                 <img src="img/1.jpg" alt="Espresso" class="espresso">
-                <h3 class="menu-card-title">Espresso</h3>
+                <h3 class="menu-card-title">Good Day</h3>
                 <p class="menu-card-price">IDR 15K</p>
             </div>
 
@@ -147,28 +150,40 @@
     <section id="contact" class="contact">
 
         <h2><span>Kontak</span> Kami</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint tempore dolore pariatur. Porro, est maiores.</p>
+        <p>Kunjungi gerai/outlite kami untuk mendapatkan sensasi dan suasana yang berbeda dari coffee shop lainnya.</p>
     
         <div class="row">
 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63472.57084070708!2d106.63016473681832!3d-6.125901314446227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a0265fac51205%3A0x145c3e2f5c10353!2sKec.%20Benda%2C%20Kota%20Tangerang%2C%20Banten!5e0!3m2!1sid!2sid!4v1675049022143!5m2!1sid!2sid" " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
 
-        <form action="">
+        <form name="kenangan-senja" method="post" action="https://script.google.com/macros/s/AKfycbyDWyCC4U_PZcAvaf6BP11EcV-YtRnatY96ps3-NNn5GdAlRIBWsP8O1G02T3BVa4Kvww/exec">
+
+            <div class="alert my-alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <span>Terima kasih!</span> Pesan Anda telah kami terima.
+              </div>
 
             <div class="input-group">
                  <i data-feather = "user"></i>
-                 <input type="text" placeholder="nama">
-            </div>
-            <div class="input-group">
-                 <i data-feather = "mail"></i>
-                 <input type="text" placeholder="email">
-            </div>
-            <div class="input-group">
-                 <i data-feather="phone"></i>
-                 <input type="text" placeholder="phone">
+                 <input type="text" placeholder="nama" name="nama" requiered>
             </div>
 
-            <button type="submit" class="btn">Kirim Pesan</button>
+            <div class="input-group">
+                 <i data-feather = "mail"></i>
+                 <input type="text" placeholder="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                 <i data-feather="phone"></i>
+                 <input type="text" placeholder="phone" name="phone" required>
+            </div>
+
+            <button type="submit" onclick="submit" class="btn-kirim">Kirim Pesan</button>
+            
+            <button class="btn-loading">
+                <i class="fa fa-circle-o-notch fa-spin"></i> Loading
+              </button>
+              
 
         </form>
 
@@ -205,8 +220,6 @@
 
     <!-- End Section Footer -->
 
-
-
     <!-- feather icons -->
     
     <script>
@@ -217,5 +230,30 @@
 
     <script src="script.js"></script>
 
+    <script>
+
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbyDWyCC4U_PZcAvaf6BP11EcV-YtRnatY96ps3-NNn5GdAlRIBWsP8O1G02T3BVa4Kvww/exec>'
+        const form = document.forms['kenangan-senja']
+        const body = document.body['index.html']
+        const btnKirim = document.getElementsByClassName["btn-kirim"]
+        const btnLoading = document.getElementsByClassName["btn-loading"]
+        const myAlert = document.getElementsByClassName["my-alert"]
+
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          // ketika tombol submit di klik
+          // tambilkan tombol loading, hilangkan tombol kirim
+         
+          fetch(scriptURL, '/index.html' { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+            document.body.innerHTML = body
+        });
+
+      </script>
+
+
 </body>
 </html>
+

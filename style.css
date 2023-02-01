@@ -359,6 +359,17 @@ footer .credit a {
     object-fit: cover;
 }
 
+.contact .row .alert {
+    
+    padding: 20px;
+    display: none;
+    background-color: rgb(33, 34, 37);
+    color: white;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+}
+
 .contact .row form {
     flex: 1 1 45rem;
     padding: 5rem 2rem;
@@ -382,7 +393,7 @@ footer .credit a {
     color: #fff;
 }
 
-.contact form .btn {
+.contact form .btn-kirim {
     margin-top: 3rem;
     display: inline-block;
     padding: 1rem 3rem;
@@ -391,6 +402,17 @@ footer .credit a {
     background-color: var(--primary);
     cursor: pointer;
 }
+
+.contact form .btn-loading {
+    margin-top: 3rem;
+    display: none;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
 
 /* Mobile Phone */
 @media (max-width: 450px) {
